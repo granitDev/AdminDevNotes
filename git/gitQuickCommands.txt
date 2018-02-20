@@ -9,3 +9,7 @@ git commit - m "your comment here"
 
 // actually push files to repo
 git push - u origin <branch name here, usually "master">
+
+// update from repo
+git fetch
+git pull

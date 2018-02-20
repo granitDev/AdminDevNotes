@@ -1,0 +1,8 @@
+localhost
+http://127.0.0.1/
+
+-apache webserver files
+var/www/html/index.html
+
+-wordpress
+/etc/wordpress

@@ -1,0 +1,77 @@
+System Design Process
+
+Conduct a needs assessment:
+    What are the goals of the project?
+    Who are the stakeholders in this project?
+        Who:
+            requested the new system?
+            will use the system after it's installed?
+            has the authority to approve funds for the project?
+            has authority to allocate my time to the project?
+            must give final approval to this project before it can begin?
+            will maintain and support the system?
+        When is the system needed?
+
+Select a distribution:
+    Will the system function as a workstation of a server?
+    Does the distribution offer support?
+    Will the application you need run on this distribution?
+
+Verify hardware compatibility
+    Check the HCL
+    Check if the UEFI will allow boot into Linux
+    x86_64, or other?
+
+Plan file system
+    file system selection
+        ext2
+        ext3
+        ext4
+        Reiser
+        btrfs
+    Essential Partitions,
+        swap
+            Desktop need 1.5x RAM size
+            Workstation needs 2x RAM size
+            Servers need 1x RAM
+        /
+            If there is not /home partition, make this take up the rest of the drive
+            Else make this at least 12GB as it needs to hold all system updates
+    RECOMMENDED Additional Partitions for System Stability
+        /home
+            Use the entire space leftover from the other partitions
+        /var
+            20GB min
+    Best practice but not essential
+        /boot
+            100 - 200 MB
+        /opt
+        /tmp
+            1 - 2 GB in size
+        /usr
+            20GB min
+
+Select essential software packages
+    Install only what is needed to do the job and nothing more
+
+Identify necessary user accounts
+    /root is allways created
+    /home
+        the rest of the users are in here
+
+Gather network information
+    Workstations: DHCP
+    Server: Static IP
+        IP address
+        Subnet make
+        Router address
+        DNS server address
+    Hostname
+    DNS domain
+    Firewall
+        Open appropriatepPorts
+
+Select an installation source
+    Installing remotely from a network server
+    Installing from internet
+    Install from CD or USB

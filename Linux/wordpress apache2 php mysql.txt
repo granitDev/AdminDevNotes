@@ -1,0 +1,6 @@
+to get php working so that wordpress's index.php will actually do something...
+you need the php module for apache2
+	libapache2-mod-php7.0
+once installed it autoloads
+if it's not loaded however type this command
+	sudo a2enmod php7.0

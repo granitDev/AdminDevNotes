@@ -1,0 +1,8 @@
+## lists the available drives
+lsblk
+
+## unmount the drive you want to use as the live usb
+sudo umount /dev/sd?
+
+## format the usb with the iso file of your choice
+sudo dd bs=4M if=input.iso of=/dev/sd<?> conv=fdatasync

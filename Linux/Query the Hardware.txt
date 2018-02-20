@@ -1,0 +1,38 @@
+Command 	Description
+lsblk 		Produces information about all block devices, such as hard disks, DVD readers and more.
+lscpu 		Shows information like number of CPUs, cores, threads and more.
+lsdev 		Displays data about all devices of which the system is aware.
+lshw 		Lists general hardware data—gives information on every detail of your hardware.
+lspci 		Displays information about PCI buses in your box and devices connected to them, such as graphics cards, network adapters and more.
+lsscsi 		Provides information on all SCSI devices or hosts attached to your box, such as hard disk drives or optical drives.
+lsusb 		Generates information about USB buses in your box and devices connected to them.
+
+
+TERMS:
+ACPI (Advanced Configuration and Power Interface): related to power aspects.
+
+AGP (Accelerated Graphics Port): a channel to allow attaching a video graphics card (not typically seen since around 2008).
+
+APM (Advanced Power Management): older than ACPI, also related to power issues.
+
+ATA (AT Attachment): "AT", as in the old IBM AT, a standard to connect storage devices, superseded by SATA in 2003.
+
+BIOS (Basic Input/Output System): firmware used when booting an Intel-compatible PC.
+
+DMA (Direct Memory Access): a feature that allows giving hardware access to RAM, independently of the CPU.
+
+DMI (Desktop Management Interface): a framework for keeping track of devices in a computer.
+
+IDE (Integrated Drive Electronics): an interface standard that later evolved into ATA.
+
+IRQ (Interrupt ReQuest): a hardware signal that allows an interrupt handler to process a given event.
+
+PCI (Peripheral Component Interconnect): a bus standard for attaching varied hardware devices to a computer, created in 1992.
+
+UEFI (Unified EFI—Extensible Firmware Interface): a 2005 replacement for BIOS, which deprecated the previous 1998 EFI standard.
+
+USB (Universal Serial Bus): a standard bus defined in 1995 to allow connecting all kinds of peripherals to a computer.
+
+PATA (Parallel ATA): the new name for ATA, after SATA came out.
+
+PCIe (PCI Express): a high-speed serial bus that replaced PCI and AGP in 2004. 

@@ -11,7 +11,7 @@ void Class::function()
     qprocess.start("cmd", args);
 }
 
-void ControllerDVR::scriptOutput()
+void Class::scriptOutput()
 {
     QString output = qprocess.readAll();
     qDebug() << output;

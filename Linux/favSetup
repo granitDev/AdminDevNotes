@@ -1,6 +1,0 @@
-This is the checklist for best practice setup of a Linux environment.
-
-Check, install if missing:
-	findutils
-	findutils-locate
-		alot time to run "updatedb -v" to creat initial index

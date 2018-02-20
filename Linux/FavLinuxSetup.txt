@@ -15,14 +15,20 @@
 
 
 ## Install anaconda!
+## make sure the normal python 3.X path is before the anaconda path
 PATH="$PATH:/home/brandon/anaconda3/bin"
 alias pycon="/home/brandon/anaconda3/bin/python"
 
 ## The prompt!
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
 
-## Install lolcat!!!!
+## aliases
 alias ls="ls | lolcat"
-alias cat="cat | lolcat"
+alias cat="lolcat"
 
-
+##Check for these, install if missing:
+	findutils
+	findutils-locate
+		alot time to run "updatedb -v" to create initial index
+    lolcat
+    

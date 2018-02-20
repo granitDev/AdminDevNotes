@@ -1,0 +1,8 @@
+
+// make sure your variable is a number or a float
+variable = parseInt(variable);
+variable = parseFloat(variabl);
+
+//jqueary formatt
+$("#id").something(myfunc);
+$(".class").something(myfunc);

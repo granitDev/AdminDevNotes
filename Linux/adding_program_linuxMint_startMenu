@@ -1,0 +1,38 @@
+ 1. sudo gedit /usr/share/applications/eclipse-luna.desktop
+
+eclipse-luna will be replaced  by your app name
+
+2. copy paste the following lines
+
+[Desktop Entry]
+Encoding=UTF-8
+Exec=/home/user/eclipse-version/eclipse/eclipse
+Icon=/home/user/eclipse-version/eclipse/icon.xpm
+Type=Application
+Terminal=false
+Comment=Eclipse Integrated Development Environment
+Name=Eclipse Luna
+GenericName=eclipse-4.4 M4
+StartupNotify=false
+Categories=Development;IDE;Java;
+
+user will be replaced by your user name.
+
+now save and exit.
+
+if the execution and icon path is correct then the entry will be automatically added to the menu under the programming section.
+
+Description of the lines:
+
+    [Desktop Entry] - indicates that this file is a *.desktop file
+    Encoding=encoding used
+    Exec=path of a binary or script used to start the program
+    Icon - path to the icon for the entry
+    Type=Application - desktop file is starting an application
+    Terminal=false - the program will not run in a terminal
+    Comment=comment about the app
+    Name= displayed name in the menu
+    GenericName=description of the entry
+    StartupNotify=false - Startup notification is turned off
+    Categories - specifies the categories in which the entry will be placed in the menu (several categories are specified with a semicolon between them, e.g. 'Game;Education')
+

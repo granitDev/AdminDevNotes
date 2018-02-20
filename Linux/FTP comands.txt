@@ -1,0 +1,5 @@
+sftp pi@192.168.0.???
+
+password 12345
+
+put <local file> [remote location]

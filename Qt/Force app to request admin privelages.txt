@@ -1,0 +1,6 @@
+In your .pro file:
+
+win32 {
+CONFIG += embed_manifest_exe
+QMAKE_LFLAGS_WINDOWS += /MANIFESTUAC:level=\'requireAdministrator\'
+}

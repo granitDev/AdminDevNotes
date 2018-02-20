@@ -1,0 +1,12 @@
+
+
+1) Ensure the .pro file has all the CONFIG += options required for externally called classes
+
+2) For files from different parts of the tree, make sure those files are properly exported
+in their header files with the proper XXXX_global.h file and that their class structure has 
+the correct modifier from the global file
+
+3) Check actual file loaction of the compiled exe's and dlls. If they are not where expected
+change the .pro file of the calling class to point to the correct location, or change the .pro
+of the called class so that it is compiled to the correct location
+

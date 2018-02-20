@@ -1,0 +1,5 @@
+Ctrl + 2 will close the debug window
+
+Ctrl + 4 will bring it back
+
+After you close it, go to the left panel and change build to Release instead of Debug

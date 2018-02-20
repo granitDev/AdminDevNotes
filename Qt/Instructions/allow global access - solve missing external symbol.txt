@@ -1,0 +1,11 @@
+to make header and source globally available
+
+include their parents global.h file
+add PARENT_EXPORT statement
+
+example:
+
+#include "pibGlobal.h"
+
+class PIB_EXPORT SubModuleVersionHandler : public QObject
+{

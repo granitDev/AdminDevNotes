@@ -1,0 +1,56 @@
+##########################
+# Setting up the library #
+##########################
+
+1.	Right click the project to make the library unnder, and select "New Subproject"
+
+2.	In the new window, select "Library" on the right hand side and then click "Choose..."
+	button at the bottom right
+
+3.	Give it a name and then click "Next"
+
+4.	Select the modules you need for your library and then click "Next"
+
+5.	Give your primary class a name, and then click "Next" and then click "Finish"
+
+	-----------------------------
+	- Make the library linkable -
+	-----------------------------
+	
+1.	In the .pro file add this at the very top:
+
+	if(!load(epic-lib)) {
+			error("libraryName not set correctly");
+	}
+
+2.	This requires an overall .pri file to be setup, as well as an epic-lib.prf
+	to be setup in order to work
+
+3.	Go to the folder where the other library .prf files are and copy one of them
+	and rename it to match your library
+
+4.	Edit the contents of the .prf file as needed to point to your library
+
+######################
+# Setting up a class #
+######################
+
+1.	Create a class under your library as you normally would.
+
+2.	In the Headers folder should be a header that is titled something like "libraryName_global.h"
+
+3.	Open the header file of your class and include the global file.
+
+4.	Open the global header file. Inside you should see something like:
+
+	#  define LIBRARYNAMESHARED_EXPORT QDECL_EXPORT
+
+	Copy the text that resembles "LIBRARYNAMESHARED_EXPORT"
+
+5.	Open your header file and past the coppied text before your class name to redefine the class:
+
+	class LIBRARYNAMESHARED_EXPORT MyClass : public QWidget
+
+###################
+ That should do it
+

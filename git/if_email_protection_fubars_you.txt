@@ -1,0 +1,22 @@
+Set your new email address globally:
+
+    git config --global user.email <my-username>@users.noreply.github.com
+
+cd into your project repository directory.
+
+Set your new email address for that repository:
+
+    git config user.email <my-username>@users.noreply.github.com
+
+Undo your last commit:
+
+    git reset --soft HEAD~1
+
+Re-commit your changes:
+
+    git commit -am "<your message>"
+
+Push the changes:
+
+    git push
+

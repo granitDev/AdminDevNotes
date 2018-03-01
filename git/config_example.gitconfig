@@ -1,0 +1,14 @@
+
+
+[gui]
+[merge]
+	tool = tortoise
+[mergetool "tortoise"]
+	cmd = "TortoiseMerge.exe" -base:"$BASE" -theirs:"$REMOTE" -	mine:"$LOCAL" -merged:"$MERGED"
+[diff]
+	tool = tortoise
+[difftool "tortoise"]
+	cmd = "TortoiseMerge.exe" -base:"$LOCAL" -mine:"$REMOTE"
+[user]
+	name = gminc\\cruss
+	email = cruss@globusmedical.com

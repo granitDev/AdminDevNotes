@@ -20,7 +20,7 @@ PATH="$PATH:/home/brandon/anaconda3/bin"
 alias pycon="/home/brandon/anaconda3/bin/python"
 
 ## The prompt!
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\[\033[01;34m\]@\[\033[01;32m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\n\u\[\033[01;34m\]@\[\033[01;32m\]\h\[\033[01;34m\] \w\n-\$\[\033[00m\] '
 
 ## aliases
 alias ls="ls | lolcat"

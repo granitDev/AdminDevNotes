@@ -89,43 +89,52 @@ public:
         \param user The username to login with.
         \param password The password of the account for the specified username.
         \brief This function to login to the currently connected host given credentials.
-        On success, the signal authenticated is emitted while error is emmited on failure.
+        On success, the signal authenticated is emitted while error is emitted on failure.
     */
     void login(QString user, QString password);
 
     /*!
-        \brief Returns the port of the current connection. If not connected to a remote host, this returns -1.
+        \brief Returns the port of the current connection. If not connected to
+		a remote host, this returns -1.
     */
     int port();
 
     /*!
         \param localPath A path to a file stored on the local machine.
-        \param password A path to a file stored on the remote machine.
-        \brief This function attempts to pull a remote file from the connected host to a local file. The local file does not need to be created beforehand.
-        On success, the signal pullSuccessful is emitted while error is emmited on failure.
-        If not connected to a remote host, or if the transfer was unsuccessful, the signal error is emitted.
+        \param remotePath A path to a file stored on the remote machine.
+        \brief This function attempts to pull a remote file from the connected
+		host to a local file. The local file does not need to be created
+		beforehand. On success, the signal pullSuccessful is emitted while error
+		is emitted on failure. If not connected to a remote host, or if the
+		transfer was unsuccessful, the signal error is emitted.
     */
     void pullFile(QString localPath, QString remotePath);
 
     /*!
         \param localPath A path to a file stored on the local machine.
         \param password A path to a file stored on the remote machine.
-        \brief This function attempts to pull a remote file from the connected host to a local file. The local file does not need to be created beforehand.
-        On success, the signal pushSuccessful is emitted while error is emmited on failure.
-        If not connected to a remote host, or if the transfer was unsuccessful, the signal error is emitted.
+        \brief This function attempts to pull a remote file from the connected
+		host to a local file. The local file does not need to be created beforehand.
+        On success, the signal pushSuccessful is emitted while error is emitted
+		on failure. If not connected to a remote host, or if the transfer was
+		unsuccessful, the signal error is emitted.
     */
     void pushFile(QString localPath, QString remotePath);
 
     /*!
         \param path A relative or absolute path to a directory on the remote host.
-        \brief This function attempts to set the working directory of the connection to path and emits workingDirectorySet upon completion.
-        If workingDirectorySet indicates no change in the working directory, the path could not be found.
-        If not connected to a remote host the signal error will be emitted.
+        \brief This function attempts to set the working directory of the
+		connection to path and emits workingDirectorySet upon completion.
+        If workingDirectorySet indicates no change in the working directory,
+		the path could not be found. If not connected to a remote host the
+		signal error will be emitted.
     */
     void setWorkingDirectory(QString path);
 
     /*!
-        \brief Returns the username of the current authenticated user on the remote host. If not connected to a remote host, or if a user has not been authenticated this returns "".
+        \brief Returns the username of the current authenticated user on the
+		remote host. If not connected to a remote host, or if a user has not
+		been authenticated this returns "".
     */
     QString user();
 
@@ -139,7 +148,8 @@ signals:
     void connected();
 
     /*!
-        \brief This signal is emitted when this class has been properly disconnected from a remote host.
+        \brief This signal is emitted when this class has been properly
+		disconnected from a remote host.
     */
     void disconnected();
 
@@ -152,7 +162,8 @@ signals:
     /*!
         \param command The command that was executed on the remote host.
         \param response The response to the command that was executed.
-        \brief This signal is emitted when a response from the remote host is received regarding a command.
+        \brief This signal is emitted when a response from the remote host is
+		received regarding a command.
     */
     void commandExecuted(QString command,QString response);
 

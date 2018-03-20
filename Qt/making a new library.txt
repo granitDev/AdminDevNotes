@@ -19,11 +19,11 @@
 	
 1.	In the .pro file add this at the very top:
 
-	if(!load(epic-lib)) {
+	if(!load(gm-lib)) {
 			error("libraryName not set correctly");
 	}
 
-2.	This requires an overall .pri file to be setup, as well as an epic-lib.prf
+2.	This requires an overall .pri file to be setup, as well as an gm-lib.prf
 	to be setup in order to work
 
 3.	Go to the folder where the other library .prf files are and copy one of them

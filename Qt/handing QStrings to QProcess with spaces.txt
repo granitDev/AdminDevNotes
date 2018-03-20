@@ -1,0 +1,13 @@
+For handing QStrings to QProcess with spaces
+
+for the path to the executable, escape quotes
+for the arguments, don't escape quotes
+
+// file path to executables with escaped quotes
+QString plink = "\"C:\\Program Files\\Putty\\plink.exe\"";
+QString pscp = "\"C:\\Program Files\\Putty\\pscp.exe\"";
+
+// arguments passed in to QStringList for QProcess - not escaped quotes
+QString sendFile = "C:\\epic\\GMAS Scripts\\StartCurrentTuning\\config.ini";
+QString startFile = "C:\\epic\\GMAS Scripts\\start_GMAS.txt";
+QString stopFile = "C:\\epic\\GMAS Scripts\\stop_GMAS.txt";

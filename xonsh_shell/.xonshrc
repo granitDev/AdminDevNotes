@@ -1,0 +1,3 @@
+$PROMPT = '{BOLD_INTENSE_RED}{user}{BOLD_BLUE}@{BOLD_GREEN}{hostname}: {BOLD_INTENSE_PURPLE}{cwd} {YELLOW}{curr_branch: {}}\n{BOLD_WHITE}# '
+
+$CASE_SENSITIVE_COMPLETIONS = 'False'

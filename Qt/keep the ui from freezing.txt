@@ -1,0 +1,4 @@
+// the ui can freeze up and not execute commands if QProcess is called
+// even if the commands came before the QProcess
+// use this to keep the ui responsive, insert before QProcess is invoked
+QApplication::processEvents();

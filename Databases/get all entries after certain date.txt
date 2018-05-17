@@ -1,0 +1,1 @@
+SELECT timestamp, other_columns FROM specific_table WHERE timestamp > TO_TIMESTAMP('2018-04-19','yyyy-mm-dd') ORDER BY timestamp ASC
